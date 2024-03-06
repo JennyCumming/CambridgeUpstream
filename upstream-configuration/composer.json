@@ -1,0 +1,34 @@
+{
+    "name": "pantheon-upstreams/upstream-configuration",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+		{
+			"url": "https://gitlab.developers.cam.ac.uk/uis/webcms/2023-platform/drupal-10-cambridge-profile.git",
+			"type": "vcs"
+		},
+        {
+			"url": "https://gitlab.developers.cam.ac.uk/uis/webcms/2023-platform/cambridge_theme_d9.git",
+			"type": "vcs"
+		}
+    ],
+    "require": {
+        "uis-drupal-team/drupal-10-cambridge-profile": "dev-main",
+        "uis-drupal/cambridge_tailwind": "dev-main",
+        "drupal/config_split": "^2.0",
+        "drupal/environment_indicator": "^4.0"
+    },
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+    "extra": {
+        "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information."
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
