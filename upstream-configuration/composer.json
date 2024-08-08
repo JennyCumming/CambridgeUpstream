@@ -13,13 +13,19 @@
         {
 			"url": "https://gitlab.developers.cam.ac.uk/uis/webcms/2023-platform/cambridge_theme_d9.git",
 			"type": "vcs"
-		}
+		},
+        {
+            "url": "https://gitlab.developers.cam.ac.uk/uis/devops/webcms/2023-platform/custom-modules/cam-admin-ui-tweaks.git",
+            "type": "vcs"
+        },
+        {
+            "type": "git",
+            "url": "https://git.drupalcode.org/issue/sdc_display-3452441.git"
+        }
     ],
     "require": {
         "uis-drupal-team/drupal-10-cambridge-profile": "dev-main",
-        "uis-drupal/cambridge_tailwind": "dev-main",
-        "drupal/config_split": "^2.0",
-        "drupal/environment_indicator": "^4.0"
+        "uis-drupal/cambridge_tailwind": "dev-main"
     },
 	"minimum-stability": "dev",
 	"prefer-stable": true,
