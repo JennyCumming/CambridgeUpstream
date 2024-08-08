@@ -6,7 +6,10 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/8",
+            "exclude": [
+                "drupal/sdc_display"
+            ]
         },
         {
             "type": "path",
@@ -19,7 +22,15 @@
         {
 			"url": "https://gitlab.developers.cam.ac.uk/uis/webcms/2023-platform/cambridge_theme_d9.git",
 			"type": "vcs"
-		}
+		},
+        {
+            "url": "https://gitlab.developers.cam.ac.uk/uis/devops/webcms/2023-platform/custom-modules/cam-admin-ui-tweaks.git",
+            "type": "vcs"
+        },
+        {
+            "type": "git",
+            "url": "https://git.drupalcode.org/issue/sdc_display-3452441.git"
+        }
     ],
     "require": {
         "pantheon-upstreams/upstream-configuration": "dev-main",
@@ -28,7 +39,9 @@
         "drupal/core-recommended": "^10",
         "pantheon-systems/drupal-integrations": "^10",
         "cweagans/composer-patches": "^1.7",
-        "drush/drush": "^11 || ^12"
+        "drush/drush": "^11 || ^12",
+        "drupal/sdc_display": "dev-3452441-entity-view-alter",
+        "chx/drupal-issue-fork": "dev-main"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -86,7 +99,9 @@
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true,
+            "chx/drupal-issue-fork": true
         }
     }
 }
