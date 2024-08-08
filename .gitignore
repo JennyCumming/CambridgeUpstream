@@ -64,6 +64,7 @@
 /web/profiles/custom/drupal-10-cambridge-profile
 /web/libraries/
 /web/private/scripts/quicksilver
+/web/modules/custom/cam_admin_ui_tweaks
 
 
 # Generally you should only ignore the root vendor directory. It's important
