@@ -65,6 +65,7 @@
 /web/libraries/
 /web/private/scripts/quicksilver
 /web/modules/custom/cam_admin_ui_tweaks
+/web/modules/contrib/sdc_display
 
 
 # Generally you should only ignore the root vendor directory. It's important

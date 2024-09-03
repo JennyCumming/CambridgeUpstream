@@ -41,7 +41,8 @@
         "cweagans/composer-patches": "^1.7",
         "drush/drush": "^11 || ^12",
         "drupal/sdc_display": "dev-3452441-entity-view-alter",
-        "chx/drupal-issue-fork": "dev-main"
+        "chx/drupal-issue-fork": "dev-main",
+        "topfloor/composer-cleanup-vcs-dirs": "^1.1"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -101,7 +102,8 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true,
             "php-http/discovery": true,
-            "chx/drupal-issue-fork": true
+            "chx/drupal-issue-fork": true,
+            "topfloor/composer-cleanup-vcs-dirs": true
         }
     }
 }
